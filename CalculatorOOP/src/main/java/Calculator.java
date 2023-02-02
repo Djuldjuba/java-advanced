@@ -6,9 +6,15 @@ public class Calculator {
     private int a;
     private int b;
 
-    public Calculator(int a, String operation, int b) {
+    public void setOperation(String operation) {
         this.operation = operation;
+    }
+
+    public void setA(int a) {
         this.a = a;
+    }
+
+    public void setB(int b) {
         this.b = b;
     }
 
