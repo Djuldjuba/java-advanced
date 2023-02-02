@@ -14,11 +14,9 @@ public class Main {
         for (Present value : present) {
             totalSum += value.getPrice();
             totalWeight += value.getWeight();
+            System.out.println(value);
         }
         System.out.println("Общая стоимость подарка: " + totalSum);
         System.out.println("Общая масса подарка: " + totalWeight);
-        for (Present somePresents : present) {
-            System.out.println(somePresents.toString());
-        }
     }
 }
