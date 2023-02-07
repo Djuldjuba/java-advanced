@@ -9,11 +9,11 @@ public class Array {
         for (int i = 0; i < array.length; i++) {
             array[i] = ((int) (Math.random() * 21) - 10);
             System.out.println(array[i]);
-            if (array[i] > max) {
+            if (array[i] > max && array[i] < 0) {
                 max = array[i];
                 maxIndex = i;
             }
-            if (array[i] < min) {
+            if (array[i] < min && array[i] >= 0) {
                 min = array[i];
                 minIndex = i;
             }
