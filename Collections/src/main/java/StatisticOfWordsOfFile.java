@@ -4,7 +4,7 @@ public class StatisticOfWordsOfFile {
     static Map<String, Integer> wordsList = new TreeMap<>();
     public static void getStatistic() {
 
-        String text = ReadFile.getText();
+        String text = ReadFile.getText().trim();
         String[] words = text.split(" ");
         for (String word : words) {
             if (!wordsList.containsKey(word)) {
